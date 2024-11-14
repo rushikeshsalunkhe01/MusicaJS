@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="animated-title">Welcome to RushiTunes Music Player</h1>
+        </header>
+    
+    <section id="background-video">
+        <video autoplay muted loop id="myVideo">
+            <source src="background-video0.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <main id="music-player">
+        <div id="current-song">
+            <img src="cover" alt="Cover Photo" id="cover_photo"/>
+            <h2 id="title">Song Title</h2>
+            <p id="singer">Artist Name</p>
+
+            <div class="controls">
+                <button id="prev"><i class="fas fa-backward"> </i></button>
+                <button id="play"><i class="fas fa-play"> </i></button>
+                <button id="next"><i class="fas fa-forward"> </i></button>
+            </div>
+        </div>
+
+        <div class="song-list"></div>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>
